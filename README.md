@@ -1,2 +1,2 @@
 # PsC-A3_2
-Trabalho A3 de: Kailil, Igor Araujo, Sandro Gustavo, Borba e Luiz Loch
+Trabalho A3 de: Kalil, Igor Araujo, Sandro Gustavo, Lucas de Borba e Luiz Loch
