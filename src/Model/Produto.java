@@ -34,17 +34,6 @@ public class Produto {
         this.dao = new ProdutoDAO();
     }
 
-    // Construtor sem ID (opcional, caso queira usar)
-    public Produto(String nome, String descricao, int estoque, double preco, Date dataCadastro) {
-        this.nome = nome;
-        this.descricao = descricao;
-        this.estoque = estoque;
-        this.preco = preco;
-        this.dataCadastro = dataCadastro;
-
-        this.dao = new ProdutoDAO();
-    }
-
     // GETTERS E SETTERS
     public int getId() {
         return id;
