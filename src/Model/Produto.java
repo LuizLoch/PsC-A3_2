@@ -15,11 +15,11 @@ public class Produto {
     private double preco;
     private Date dataCadastro;
 
-    private final ProdutoDAO dao;
+
 
     // Construtor padrão
     public Produto() {
-        this.dao = new ProdutoDAO();
+        
     }
 
     // Construtor com atributos
@@ -31,7 +31,7 @@ public class Produto {
         this.preco = preco;
         this.dataCadastro = dataCadastro;
 
-        this.dao = new ProdutoDAO();
+        
     }
 
     // GETTERS E SETTERS
@@ -98,47 +98,5 @@ public class Produto {
         MÉTODOS EM CAMADAS QUE USAM O DAO
         (Mesmo padrão que você usava em Aluno.java)
     */
-
-    // Retorna lista de produtos
-    public ArrayList getMinhaLista() {
-        return dao.getMinhaLista();
-    }
-
-    // Cadastrar novo produto
-    public boolean InsertProdutoBD(String nome, String descricao, int estoque, double preco, Date dataCadastro) throws SQLException {
-
-        int id = this.maiorID() + 1;
-        Produto p = new Produto(id, nome, descricao, estoque, preco, dataCadastro);
-
-        dao.InsertProdutoBD(p);
-
-        return true;
-    }
-
-    // Deletar produto por ID
-    public boolean DeleteProdutoBD(int id) {
-        dao.DeleteProdutoBD(id);
-        return true;
-    }
-
-    // Atualizar produto
-    public boolean UpdateProdutoBD(int id, String nome, String descricao, int estoque, double preco, Date dataCadastro) {
-
-        Produto p = new Produto(id, nome, descricao, estoque, preco, dataCadastro);
-
-        dao.UpdateProdutoBD(p);
-
-        return true;
-    }
-
-    // Carregar 1 produto pelo ID
-    public Produto carregaProduto(int id) {
-        return dao.carregaProduto(id);
-    }
-
-    // Retorna maior ID do banco
-    public int maiorID() throws SQLException {
-        return dao.maiorID();
-    }
 
 }
