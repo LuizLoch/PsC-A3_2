@@ -1,6 +1,5 @@
 package View;
 
-import View.MainTela;
 import javax.swing.*;
 
 public class TelaLogin extends javax.swing.JFrame {
@@ -54,6 +53,11 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel3.setText("Senha:");
 
         l_senha.setText("jPasswordField1");
+        l_senha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                l_senhaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -123,6 +127,10 @@ public class TelaLogin extends javax.swing.JFrame {
                 JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_b_loginActionPerformed
     }
+    private void l_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_l_senhaActionPerformed
+        
+    }//GEN-LAST:event_l_senhaActionPerformed
+    
     /**
      * @param args the command line arguments
      */
