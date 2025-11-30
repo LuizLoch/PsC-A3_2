@@ -1,6 +1,6 @@
 package Principal;
 
-import View.TelaPrincipal;
+import View.MainTela;
 import javax.swing.*;
 import java.awt.*;
 
