@@ -23,6 +23,7 @@ public class MainTela extends javax.swing.JFrame {
         b_cliente = new javax.swing.JButton();
         b_produto = new javax.swing.JButton();
         b_pedidos = new javax.swing.JButton();
+        b_categoria = new javax.swing.JButton();
         b_inventario = new javax.swing.JButton();
         b_dashboard = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
@@ -63,6 +64,16 @@ public class MainTela extends javax.swing.JFrame {
             }
         });
 
+        b_categoria.setBackground(new java.awt.Color(204, 204, 204));
+        b_categoria.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        b_categoria.setForeground(new java.awt.Color(32, 32, 32));
+        b_categoria.setText("Categoria");
+        b_categoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_categoriaActionPerformed(evt);
+            }
+        });
+
         b_inventario.setBackground(new java.awt.Color(204, 204, 204));
         b_inventario.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         b_inventario.setForeground(new java.awt.Color(32, 32, 32));
@@ -93,6 +104,7 @@ public class MainTela extends javax.swing.JFrame {
                     .addComponent(b_cliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(b_produto, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
                     .addComponent(b_pedidos, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
+                    .addComponent(b_categoria, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
                     .addComponent(b_inventario, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
                     .addComponent(b_dashboard, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
                 .addContainerGap())
@@ -100,17 +112,19 @@ public class MainTela extends javax.swing.JFrame {
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(87, 87, 87)
+                .addGap(60, 60, 60)
                 .addComponent(b_cliente)
-                .addGap(33, 33, 33)
+                .addGap(60, 60, 60)
                 .addComponent(b_produto)
-                .addGap(32, 32, 32)
+                .addGap(60, 60, 60)
                 .addComponent(b_pedidos)
-                .addGap(39, 39, 39)
+                .addGap(60, 60, 60)
+                .addComponent(b_categoria)
+                .addGap(60, 60, 60)
                 .addComponent(b_inventario)
-                .addGap(30, 30, 30)
+                .addGap(60, 60, 60)
                 .addComponent(b_dashboard)
-                .addContainerGap())
+                .addGap(30, 30, 30))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -124,7 +138,7 @@ public class MainTela extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 430, Short.MAX_VALUE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 588, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -156,9 +170,7 @@ public class MainTela extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
@@ -172,6 +184,22 @@ public class MainTela extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void b_clienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_clienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b_clienteActionPerformed
+
+    private void b_produtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_produtoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b_produtoActionPerformed
+
+    private void b_pedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_pedidosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b_pedidosActionPerformed
+
+    private void b_categoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_categoriaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b_categoriaActionPerformed
+
     private void b_inventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_inventarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_b_inventarioActionPerformed
@@ -179,22 +207,6 @@ public class MainTela extends javax.swing.JFrame {
     private void b_dashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_dashboardActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_b_dashboardActionPerformed
-
-    private void b_pedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_pedidosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_b_pedidosActionPerformed
-
-    private void b_produtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_produtoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_b_produtoActionPerformed
-
-    private void b_clienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_clienteActionPerformed
-        // Cria uma instância da tela de escolha de cliente
-    ClienteEscTela telaCliente = new ClienteEscTela();
-    
-    // Exibe a nova tela
-    telaCliente.setVisible(true);
-    }//GEN-LAST:event_b_clienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -222,6 +234,7 @@ public class MainTela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton b_categoria;
     private javax.swing.JButton b_cliente;
     private javax.swing.JButton b_dashboard;
     private javax.swing.JButton b_inventario;
