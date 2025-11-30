@@ -8,14 +8,14 @@ package View;
  *
  * @author Administrator
  */
-public class PedidoCadTela extends javax.swing.JFrame {
+public class PedidoCadTela1 extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(PedidoCadTela.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(PedidoCadTela1.class.getName());
 
     /**
      * Creates new form PedidoTela
      */
-    public PedidoCadTela() {
+    public PedidoCadTela1() {
         initComponents();
     }
 
@@ -273,7 +273,7 @@ public class PedidoCadTela extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new PedidoCadTela().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new PedidoCadTela1().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
