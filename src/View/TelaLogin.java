@@ -2,6 +2,7 @@ package View;
 
 import View.MainTela;
 import javax.swing.*;
+import java.util.logging.Logger;
 
 public class TelaLogin extends javax.swing.JFrame {
     
@@ -141,6 +142,7 @@ public class TelaLogin extends javax.swing.JFrame {
                 "Usuário ou senha inválidos.",
                 "Erro",
                 JOptionPane.ERROR_MESSAGE);
+
     }//GEN-LAST:event_b_loginActionPerformed
 
     private void l_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_l_senhaActionPerformed
