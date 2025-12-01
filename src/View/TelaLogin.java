@@ -127,22 +127,22 @@ public class TelaLogin extends javax.swing.JFrame {
         String correctUser = "admin";
         String correctPass = "1234";
 
-    String username = l_usuario.getText();
-    String password = new String(l_senha.getPassword());
+        String username = l_usuario.getText();
+        String password = new String(l_senha.getPassword());
 
-    if(username.equals(correctUser) && password.equals(correctPass)){
-        JOptionPane.showMessageDialog(this, "Login realizado com sucesso!");
+        if(username.equals(correctUser) && password.equals(correctPass)){
+            JOptionPane.showMessageDialog(this, "Login realizado com sucesso!");
 
-        MainTela main = new MainTela();
-        main.setVisible(true);
-        this.dispose();
-        
-    } else {
-        JOptionPane.showMessageDialog(this, 
-                "Usuário ou senha inválidos.",
-                "Erro",
-                JOptionPane.ERROR_MESSAGE);
-
+            MainTela main = new MainTela();
+            main.setVisible(true);
+            this.dispose();
+            
+        } else {
+            JOptionPane.showMessageDialog(this, 
+                    "Usuário ou senha inválidos.",
+                    "Erro",
+                    JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_b_loginActionPerformed
 
     private void l_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_l_senhaActionPerformed
@@ -153,7 +153,6 @@ public class TelaLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
-    }
     /**
      * @param args the command line arguments
      */

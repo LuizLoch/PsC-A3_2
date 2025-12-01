@@ -96,22 +96,18 @@ public class Produto {
 
     /*
         MÉTODOS EM CAMADAS QUE USAM O DAO
-        (Mesmo padrão que você usava em Aluno.java)
     */
 
     // Retorna lista de produtos
-    public ArrayList getMinhaLista() {
+    public ArrayList<Produto> getMinhaLista() {
         return dao.getMinhaLista();
     }
 
     // Cadastrar novo produto
-    public boolean InsertProdutoBD(String nome, String descricao, int estoque, double preco, Date dataCadastro) throws SQLException {
-
-        int id = this.maiorID() + 1;
+    public boolean InsertProdutoBD(int id, String nome, String descricao, int estoque, double preco, Date dataCadastro) throws SQLException {
+        // ID não é auto-increment, precisa ser fornecido
         Produto p = new Produto(id, nome, descricao, estoque, preco, dataCadastro);
-
         dao.InsertProdutoBD(p);
-
         return true;
     }
 
@@ -123,11 +119,8 @@ public class Produto {
 
     // Atualizar produto
     public boolean UpdateProdutoBD(int id, String nome, String descricao, int estoque, double preco, Date dataCadastro) {
-
         Produto p = new Produto(id, nome, descricao, estoque, preco, dataCadastro);
-
         dao.UpdateProdutoBD(p);
-
         return true;
     }
 
